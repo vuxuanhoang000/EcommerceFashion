@@ -5,11 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node-terminal",
-            "request": "launch",
             "name": "Server",
-            "cwd": "${workspaceFolder}/server",
-            "command": "npm run server"
+            "request": "launch",
+            "runtimeArgs": ["run", "start"],
+            "runtimeExecutable": "npm",
+            "type": "node",
+            "cwd": "${workspaceFolder}/server"
+        },
+        {
+            "name": "Client",
+            "request": "launch",
+            "runtimeArgs": ["run", "start"],
+            "runtimeExecutable": "npm",
+            "type": "node",
+            "cwd": "${workspaceFolder}/client"
         }
     ]
 }
